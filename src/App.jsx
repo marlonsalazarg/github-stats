@@ -1,10 +1,10 @@
+import AuthenticatedApp from "./AuthenticatedApp";
+import UnauthenticatedApp from "./UnauthenticatedApp";
+import { useAuth } from "./context/Auth-Context";
+
 function App() {
-  return (
-    <>
-      <h1>Vite + React</h1>
-      <p>Click</p>
-    </>
-  );
+  const { user } = useAuth();
+  return user ? <AuthenticatedApp /> : <UnauthenticatedApp />;
 }
 
 export default App;

@@ -4,10 +4,15 @@ import { BiSolidSearch, BiSolidUser } from "react-icons/bi";
 import styled from "@emotion/styled";
 
 const FooterDiv = styled.div`
+  @media (max-width: 760px) {
+    width: 100%;
+  }
   display: flex;
+  position: fixed;
+  bottom: 0;
   justify-content: space-around;
   align-items: center;
-  width: 100%;
+  width: 760px;
   border-top: 2px solid #bdbdbd;
   & a {
     margin-top: 1em;

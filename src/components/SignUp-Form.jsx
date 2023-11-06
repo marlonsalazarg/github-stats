@@ -43,6 +43,7 @@ const SignUpForm = () => {
 
   return (
     <Container>
+      <h1>Welcome to Github Stats</h1>
       <form onSubmit={handleSubmit}>
         <Input
           name="email"
@@ -64,15 +65,18 @@ const SignUpForm = () => {
           name="first_name"
           value={formData.first_name}
           onChange={handleChange}
+          placeholder="******"
           label="First Name"
         />
         <Input
           name="last_name"
           value={formData.last_name}
           onChange={handleChange}
+          placeholder="******"
           label="Last Name"
         />
         <CustomButton type="submit">Create Account</CustomButton>
+        <br />
         <Link to="/">Login</Link>
       </form>
     </Container>
